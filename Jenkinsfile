@@ -14,8 +14,7 @@ pipeline {
     stage('Test') {
       steps {
         script {
-          sh 'npm test a || exit'
-          sh 'npm test q'
+          sh 'npm test --watchAll=false'
         }
       }
       post {
