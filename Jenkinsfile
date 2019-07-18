@@ -15,6 +15,7 @@ pipeline {
       steps {
         script {
           sh 'npm test a'
+          sh 'npm test q'
         }
       }
       post {
