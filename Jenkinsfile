@@ -17,11 +17,6 @@ pipeline {
           sh 'npm test'
         }
       }
-      post {
-        always {
-          junit 'output/coverage/junit/junit.xml'
-        }
-      }
     }
     stage('Build') {
       steps {
