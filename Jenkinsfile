@@ -8,7 +8,7 @@ pipeline {
       steps {
         script {
           sh 'npm install'
-          sh 'npm audit fix'
+          sh 'npm audit fix --force'
         }
       }
     }
