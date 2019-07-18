@@ -14,7 +14,7 @@ pipeline {
     stage('Test') {
       steps {
         script {
-          sh 'npm test'
+          sh 'npm test a'
         }
       }
       post {
